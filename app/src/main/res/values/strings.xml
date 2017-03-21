@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">馨乐</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_local_music_list">本地音乐</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="MusicServiceBroadReceiverAction">winter.zxb.smilesb101.winterMusic.service.receiver</string>
+    <drawable name="btn_hor">#C0C0C0</drawable>
+</resources>

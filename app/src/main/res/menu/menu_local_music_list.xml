@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="winter.zxb.smilesb101.winterMusic.localMusicActivity">
+   <group android:enabled="true">
+       <item
+           android:id="@+id/menu_search_btn"
+           android:title="搜索歌曲"
+           android:icon="@mipmap/actionbar_search"
+           android:actionViewClass="android.widget.SearchView"
+           app:showAsAction="ifRoom|collapseActionView"/>
+       <item
+           android:id="@+id/menu_more_scanMusic"
+           android:title="扫描歌曲"
+           android:icon="@mipmap/btmlay_icn_scan"
+           app:showAsAction="never"/>
+       <item android:id="@+id/menu_more_orderStyle"
+           android:title="选择排序方式"
+             android:icon="@mipmap/actionbar_menu_icn_order_default"
+             app:showAsAction="never"/>
+       <item android:id="@+id/menu_more_getLrc"
+             android:title="一键获取封面歌词"
+             android:icon="@mipmap/actionbar_menu_icn_lrc"
+             app:showAsAction="never"/>
+       <item android:id="@+id/menu_more_updateMusic"
+             android:title="升级音质"
+             android:icon="@mipmap/actionbar_menu_icn_upquality"
+             app:showAsAction="never"/>
+   </group>
+
+</menu>

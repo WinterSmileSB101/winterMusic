@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--歌单表中表布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="0dp"
+    android:background="#CCCCCC"
+    android:id="@+id/list_and_list_Layout">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|left"
+            android:id="@+id/list_andlist_pic"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/list_andlist_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/list_andlist_pic"
+            android:layout_marginLeft="10dp"
+            android:textSize="14dip"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/list_andlist_tools"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/list_and_list_List"
+    android:layout_marginLeft="10dp"
+    android:layout_gravity="left"></ListView>
+</LinearLayout>

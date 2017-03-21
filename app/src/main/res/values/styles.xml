@@ -1,0 +1,83 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+    <!--溢出菜单的主题-->
+    <style name="AppTheme.material" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+    <!--设置背景图片为白色的工具按钮-->
+    <style name="OverFlow" parent="android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@mipmap/play_rdi_icn_more</item>
+    </style>
+<!--没有动作栏的主题-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorPrimary">@android:color/background_light</item>
+        <item name="android:background">@color/colorWrite</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+        <item name="android:colorForeground">@color/colorWrite</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:colorBackground">@color/colorDarkRed</item>
+        <item name="android:background">@color/colorDarkRed</item>
+    </style>
+<!--弹出菜单的主题风格-->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+    </style>
+<!--能显示图标的TabLayoutStyle-->
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">#FFFFFF</item>
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabBackground">@color/colorDarkRed</item>
+    </style>
+    <!--能显示图标的Tablayout的文字外观Style，要显示图片需要设置TextAllCaps为false-->
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="textAllCaps">false</item>
+    </style>
+    <!--音乐列表的动画风格-->
+<style name="playList_popupWiondwStyle" parent="android:Animation">
+<item name="android:windowEnterAnimation">@anim/popup_from_bottom_out</item>
+    <item name="android:windowExitAnimation">@anim/popup_from_bottom_enter</item>
+</style>
+    <!--全屏的Dialog风格-->
+    <style name="DiaLog_FullScreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- 自定义进度条 -->
+    <style name="ProgressBar_Mini" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">8dip</item>
+        <item name="android:minHeight">3dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/music_progressbar_style</item>
+    </style>
+    <!-- 弹出框动画 由下至上 -->
+    <style name="dialogStyle" parent="@android:style/Animation.Dialog">
+        <item name="@android:windowEnterAnimation">@anim/dialog_bottom_enter</item>
+        <!-- 进入时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/dialog_bottom_exit</item>
+        <!-- 退出时的动画 -->
+    </style>
+    <!-- 对话框样式 -->
+    <style name="MyDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+</resources>

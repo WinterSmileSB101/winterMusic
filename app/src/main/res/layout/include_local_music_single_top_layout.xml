@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--单曲的头部悬浮引入窗口-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/_include_content"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    android:background="#F9F9F9">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/_include_play_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/lay_icn_play"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/_include_play_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="22dp"
+            android:text="播放全部"
+            android:layout_toEndOf="@+id/_include_play_btn"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/_include_play_music_Num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorSliver"
+            android:textSize="16dp"
+            android:layout_toEndOf="@+id/_include_play_text"
+            android:layout_centerVertical="true"/>
+        <!--去到多选界面按钮-->
+        <ImageView
+            android:id="@+id/_include_goToChose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/list_icn_mng"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

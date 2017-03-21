@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+              android:orientation="vertical"
+                tools:context="winter.zxb.smilesb101.winterMusic.localMusicActivity$localMusicListFragment"
+    android:background="@color/colorBackGroundColor"
+    android:id="@+id/local_music_Content">
+    <!--下拉刷新所用到的Layout-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/mSwipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--本地音乐列表-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/local_music_list"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="#f9f9f9"
+            android:layout_marginLeft="10dp"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
